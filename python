@@ -1,0 +1,5 @@
+def sort_dicts_by_key(data, key_name):
+    """Sort a list of dictionaries by a given key name."""
+    if not data:
+        return []
+    return sorted(data, key=lambda x: x.get(key_name, 0))
